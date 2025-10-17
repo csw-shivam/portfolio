@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the dark cinematic theme */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for headings */
+}
+
+a {
+    color: #ffcc00; /* Gold color for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700; /* Brighter gold on hover */
+}
+
+.section {
+    padding: 4rem 2rem; /* Section padding */
+}
+
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?cinematic'); /* Example cinematic image */
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for project cards */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
